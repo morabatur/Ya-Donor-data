@@ -1,9 +1,9 @@
 name: Оновити дані додатку
 
-# Раз на добу збирає потребу у крові з donor.utcc.gov.ua і кладе два файли
-# у гілку data: needs.json (потреба по центрах) і articles.json (пам'ятка
-# донора). Додаток ЯДонор читає їх напряму з raw.githubusercontent.com,
-# тому окремий сервер не потрібен.
+# Раз на добу збирає потребу у крові з donor.utcc.gov.ua і кладе три файли
+# у гілку data: needs.json (потреба по центрах), articles.json (пам'ятка
+# донора) і donor-days.json (розклад днів донора). Додаток ЯДонор читає
+# їх напряму з raw.githubusercontent.com, тому окремий сервер не потрібен.
 #
 # Цей репозиторій має лишатися публічним: інакше посилання не відкриється
 # з телефона.
@@ -51,12 +51,32 @@ jobs:
               sys.exit("у файлі немає жодної статті")
           PY
 
+      - name: Перевірити розклад днів донора
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+          data = json.load(open("donor-days.json", encoding="utf-8"))
+          days = data["days"]
+          print(f"днів донора у файлі: {len(days)}")
+          seen = set()
+          for day in days:
+              if not day.get("title"):
+                  sys.exit(f"{day.get('id')}: немає заголовка")
+              if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day.get("date", "")):
+                  sys.exit(f"{day.get('id')}: дата має бути у форматі 2026-12-05")
+              if not day.get("centerId") and not day.get("place"):
+                  sys.exit(f"{day.get('id')}: потрібен або centerId, або place")
+              if day["id"] in seen:
+                  sys.exit(f"{day['id']}: такий id уже є")
+              seen.add(day["id"])
+          PY
+
       - name: Опублікувати в гілку data
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git checkout --orphan data-tmp
           git rm -rf --cached . > /dev/null
-          git add -f needs.json articles.json
+          git add -f needs.json articles.json donor-days.json
           git commit -m "Дані додатку на $(date -u +%Y-%m-%d)"
           git push -f origin data-tmp:data
