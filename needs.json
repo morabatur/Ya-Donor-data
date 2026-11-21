@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-21",
+  "source": "https://donor.utcc.gov.ua/service_center",
+  "centers": [
+    {
+      "centerId": "bila-tserkva",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "MEDIUM",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "cherkasy",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "MEDIUM"
+      }
+    },
+    {
+      "centerId": "chernihiv",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "LOW",
+        "A_POS": "MEDIUM",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "MEDIUM",
+        "AB_POS": "LOW",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "chernivtsi",
+      "needs": {
+        "O_POS": "LOW",
+        "O_NEG": "LOW",
+        "A_POS": "HIGH",
+        "A_NEG": "MEDIUM",
+        "B_POS": "LOW",
+        "B_NEG": "MEDIUM",
+        "AB_POS": "MEDIUM",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "dnipro",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "LOW",
+        "A_POS": "MEDIUM",
+        "A_NEG": "LOW",
+        "B_POS": "LOW",
+        "B_NEG": "LOW",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "ivano-frankivsk",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "LOW",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "kharkiv",
+      "needs": {
+        "O_POS": "LOW",
+        "O_NEG": "MEDIUM",
+        "A_POS": "LOW",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "MEDIUM"
+      }
+    },
+    {
+      "centerId": "kherson",
+      "needs": {
+        "O_POS": "LOW",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "MEDIUM",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "khmelnytskyi-1",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "HIGH",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "kropyvnytskyi",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "MEDIUM",
+        "A_POS": "MEDIUM",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "HIGH",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "kyiv-1",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "HIGH",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "lutsk",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "MEDIUM",
+        "A_POS": "HIGH",
+        "A_NEG": "LOW",
+        "B_POS": "MEDIUM",
+        "B_NEG": "LOW",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "lviv-1",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "LOW",
+        "AB_POS": "HIGH",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "mykolaiv",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "MEDIUM",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "odesa-1",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "poltava",
+      "needs": {
+        "O_POS": "MEDIUM",
+        "O_NEG": "MEDIUM",
+        "A_POS": "LOW",
+        "A_NEG": "LOW",
+        "B_POS": "LOW",
+        "B_NEG": "MEDIUM",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "rivne",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "LOW",
+        "B_POS": "MEDIUM",
+        "B_NEG": "LOW",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "ternopil",
+      "needs": {
+        "O_POS": "MEDIUM",
+        "O_NEG": "LOW",
+        "A_POS": "MEDIUM",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "LOW",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "uzhhorod",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "HIGH",
+        "B_NEG": "HIGH",
+        "AB_POS": "HIGH",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "vinnytsia",
+      "needs": {
+        "O_POS": "LOW",
+        "O_NEG": "LOW",
+        "A_POS": "LOW",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "HIGH"
+      }
+    },
+    {
+      "centerId": "zaporizhzhia",
+      "needs": {
+        "O_POS": "LOW",
+        "O_NEG": "MEDIUM",
+        "A_POS": "LOW",
+        "A_NEG": "LOW",
+        "B_POS": "LOW",
+        "B_NEG": "LOW",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    },
+    {
+      "centerId": "zhytomyr",
+      "needs": {
+        "O_POS": "HIGH",
+        "O_NEG": "HIGH",
+        "A_POS": "HIGH",
+        "A_NEG": "HIGH",
+        "B_POS": "LOW",
+        "B_NEG": "HIGH",
+        "AB_POS": "LOW",
+        "AB_NEG": "LOW"
+      }
+    }
+  ]
+}
