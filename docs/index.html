@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Резус. Пам'яті макак</title>
+<meta name="description" content="Чому резус-фактор називається резусом: про макак, з чиєї крові почалася ця літера в медичній картці.">
+<style>
+  :root {
+    --bg: #FDF6F1;
+    --surface: #FFFFFF;
+    --ink: #22312C;
+    --ink-soft: #5B6B65;
+    --teal: #0F6B5A;
+    --coral: #F26B4E;
+    --line: #E4DAD3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141A18;
+      --surface: #1D2522;
+      --ink: #E8EFEB;
+      --ink-soft: #9DADA6;
+      --teal: #6FC5AE;
+      --coral: #FF8468;
+      --line: #2C3733;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 16px 72px;
+  }
+
+  header {
+    padding: 64px 0 36px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 36px;
+  }
+
+  .drop {
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: clamp(30px, 7vw, 44px);
+    line-height: 1.12;
+    margin: 0 0 14px;
+    color: var(--teal);
+    letter-spacing: -0.015em;
+  }
+
+  .lead {
+    font-size: clamp(18px, 4.4vw, 20px);
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  h2 {
+    font-size: clamp(21px, 5vw, 25px);
+    color: var(--teal);
+    margin: 48px 0 14px;
+    letter-spacing: -0.01em;
+  }
+
+  p { margin: 0 0 18px; }
+
+  .pull {
+    border-left: 3px solid var(--coral);
+    padding: 2px 0 2px 18px;
+    margin: 28px 0;
+    color: var(--ink);
+    font-size: clamp(18px, 4.4vw, 21px);
+    line-height: 1.5;
+  }
+
+  figure {
+    margin: 32px 0;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    background: var(--surface);
+  }
+
+  figcaption {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-top: 9px;
+    line-height: 1.5;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 32px 0;
+  }
+
+  .grid figure { margin: 0; }
+
+  @media (max-width: 520px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  a { color: var(--teal); }
+  a:hover { color: var(--coral); }
+
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 36px 0;
+    font-size: 15.5px;
+    color: var(--ink-soft);
+  }
+
+  .note strong { color: var(--ink); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 52px;
+    padding-top: 26px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  footer ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+  }
+
+  footer li { margin-bottom: 7px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <svg class="drop" viewBox="0 0 108 108" aria-hidden="true">
+    <path fill="#F26B4E" d="M54,30.25 C54,30.25 36.5,51.5 36.5,62.75 a17.5,17.5 0 0 0 35,0 C71.5,51.5 54,30.25 54,30.25 Z"/>
+  </svg>
+  <h1>Резус. Пам'яті макак</h1>
+  <p class="lead">У медичній картці кожного з нас є літера, якої там не було б без цих тварин.</p>
+</header>
+
+<p>Коли людина вперше здає кров, їй кажуть дві речі: групу і резус. Плюс або мінус. Це настільки буденно, що ніхто не питає, звідки взялося саме слово «резус».</p>
+
+<p>Воно взялося від мавпи.</p>
+
+<figure>
+  <img src="images/macaque-female.jpg" alt="Доросла самиця резус-макаки сидить на камені">
+  <figcaption>Резус-макака, <i>Macaca mulatta</i>. Фото: Charles J. Sharp, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Rhesus_macaque_(Macaca_mulatta_mulatta)_female.jpg">Wikimedia Commons</a></figcaption>
+</figure>
+
+<h2>1940 рік</h2>
+
+<p>Карл Ландштайнер, той самий, що двадцятьма роками раніше відкрив групи крові, працював з Алексом Вінером над новим питанням: чи є в людській крові ознаки, про які ще ніхто не знає.</p>
+
+<p>Вони взяли еритроцити резус-макак і ввели їх кролям і морським свинкам. Ті виробили антитіла. Коли цими антитілами подіяли на кров людей, кров приблизно вісімдесяти п'яти зі ста людей починала склеюватися, а решти — ні.</p>
+
+<p>Так з'явився поділ на резус-позитивних і резус-негативних. Назву дали за джерелом: антитіла отримали завдяки <i>Rhesus</i> — звідси Rh.</p>
+
+<div class="pull">Макаки не були предметом дослідження. Вони були реактивом.</div>
+
+<h2>Чому це важливо дотепер</h2>
+
+<p>Резус-конфлікт — це коли у резус-негативної матері розвивається дитина з позитивним резусом. Організм матері може почати руйнувати кров дитини. До того, як навчилися це передбачати й зупиняти, через це помирали немовлята.</p>
+
+<p>Сьогодні резус перевіряють усім вагітним, а резус-негативним жінкам вводять імуноглобулін. Тому в більшості країн гемолітична хвороба новонароджених стала рідкістю.</p>
+
+<p>Той самий аналіз роблять і донору перед здачею крові — щоб вона точно підійшла тому, кому її переллють.</p>
+
+<div class="grid">
+  <figure>
+    <img src="images/macaque-juvenile.jpg" alt="Голова молодої резус-макаки крупним планом">
+    <figcaption>Фото: Charles J. Sharp, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Rhesus_macaque_(Macaca_mulatta)_juvenile_head_Kathmandu.jpg">Wikimedia Commons</a></figcaption>
+  </figure>
+  <figure>
+    <img src="images/macaque-male.jpg" alt="Дорослий самець резус-макаки">
+    <figcaption>Фото: Charles J. Sharp, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Rhesus_macaque_(Macaca_mulatta_mulatta),_male,_Gokarna.jpg">Wikimedia Commons</a></figcaption>
+  </figure>
+</div>
+
+<h2>Чесна деталь</h2>
+
+<p>Пізніше з'ясувалося, що антитіло, яке Ландштайнер і Вінер отримали від макак, — найімовірніше не те саме, яке сьогодні визначає резус у людини. Воно діяло на інший антиген, який згодом назвали LW, на честь самих Ландштайнера й Вінера.</p>
+
+<p>Антитіло, що справді відповідає за резус-конфлікт, роком раніше знайшли Філіп Левін і Руфус Стетсон — і знайшли його в людини, у матері, яка втратила дитину.</p>
+
+<p>Тобто назва «резус» історично трохи випадкова. Але вона лишилася, і щоразу, коли лікар пише в картці «Rh+», він згадує мавпу, навіть не думаючи про це.</p>
+
+<h2>Острів Кайо-Сантьяго</h2>
+
+<p>У грудні 1938 року на маленький острів біля Пуерто-Рико привезли кількасот резус-макак, спійманих в Індії. Колонію заснував Кларенс Карпентер — щоб у дослідників були здорові тварини: серед тих, кого везли з Азії, майже всі хворіли на туберкульоз.</p>
+
+<p>Острів існує досі. Там живе близько тисячі восьмисот макак, уже дев'яте покоління. За всю історію колонії через неї пройшло понад одинадцять тисяч тварин.</p>
+
+<figure>
+  <img src="images/macaque-puerto-rico.jpg" alt="Молода резус-макака в Пуерто-Рико">
+  <figcaption>Молода резус-макака, Пуерто-Рико. Фото: Geoff Gallice, <a href="https://creativecommons.org/licenses/by/2.0" rel="license">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Macaca_mulatta_juvenile,_Puerto_Rico.jpg">Wikimedia Commons</a></figcaption>
+</figure>
+
+<div class="note">
+  <strong>Про ці фотографії.</strong> Тут зняті звичайні макаки, що живуть собі на волі — в Індії, Непалі, Пуерто-Рико. Це не знімки з лабораторій. Ми свідомо не шукали таких фотографій: сторінка не про те, щоб вразити, а про те, щоб не забути.
+</div>
+
+<h2>Навіщо ця сторінка</h2>
+
+<p>Донорство крові тримається на тому, що хтось колись з'ясував, чия кров кому підходить. Частину цього знання отримали не люди і не добровольці.</p>
+
+<p>Здати кров — це п'ятнадцять хвилин і власне рішення. Варто пам'ятати, що право на це рішення комусь дісталося без вибору.</p>
+
+<footer>
+  <p>Сторінка зроблена для додатку <a href="https://github.com/morabatur/Ya-Donor-data">ЯДонор</a>.</p>
+  <p>Джерела:</p>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Rh_blood_group_system">Rh blood group system</a> — історія відкриття й відмінність LW від D</li>
+    <li><a href="https://en.wikipedia.org/wiki/Cayo_Santiago">Cayo Santiago</a> — колонія резус-макак у Пуерто-Рико</li>
+    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4567979/">Kessler &amp; Rawlins</a> — історія колонії від заснування</li>
+  </ul>
+  <p>Фотографії належать їхнім авторам і використані за ліцензіями Creative Commons, зазначеними під кожною. Розмір зменшено, зміст не змінювався.</p>
+</footer>
+
+</div>
+</body>
+</html>
