@@ -115,6 +115,13 @@
 
   .grid figure { margin: 0; }
 
+  /* Знімки різних пропорцій, тому в парі ріжемо їх до однакової
+     висоти — інакше підписи під ними стоять на різних рівнях. */
+  .grid figure img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
   @media (max-width: 520px) {
     .grid { grid-template-columns: 1fr; }
   }
